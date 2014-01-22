@@ -9,4 +9,4 @@ end
 
 Spree::PermittedAttributes.checkout_attributes << :terms_and_conditions
 
-Spree::Order.state_machine.before_transition :to => :payment, :do => :valid_terms_and_conditions?
+Spree::Order.state_machine.before_transition :to => :confirm, :do => :valid_terms_and_conditions?

@@ -1,5 +1,5 @@
-Deface::Override.new(:virtual_path => "spree/checkout/_delivery",
+Deface::Override.new(:virtual_path => "spree/checkout/_payment",
                      :name => "terms_and_conditions_checkbox",
-                     :insert_after => "#shipping_method",
+                     :insert_before => "[data-hook='buttons']",
                      :partial => "spree/checkout/terms_and_conditions_checkbox",
                      :disabled => false)
