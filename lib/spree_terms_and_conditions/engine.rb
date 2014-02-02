@@ -1,5 +1,6 @@
 module SpreeTermsAndConditions
-  mattr_accessor :on_checkout_step
+  mattr_accessor :show_on_step
+  mattr_accessor :check_before_step
   
   class Engine < Rails::Engine
     require 'spree/core'

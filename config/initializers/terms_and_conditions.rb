@@ -1,1 +1,2 @@
-SpreeTermsAndConditions.on_checkout_step ||= 'payment'
+SpreeTermsAndConditions.show_on_step ||= :payment
+SpreeTermsAndConditions.check_before_step ||= :complete
