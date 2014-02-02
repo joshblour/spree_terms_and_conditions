@@ -1,4 +1,6 @@
 module SpreeTermsAndConditions
+  mattr_accessor :on_checkout_step
+  
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
